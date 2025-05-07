@@ -1,0 +1,103 @@
+body{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    background-color: #FBD314;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+#bal-oldal{
+    width: 250px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#jobb-oldal{
+    width: 250px;
+    right: 0;
+    display: flex;
+}
+
+#jobb-oldal, #bal-oldal{
+    position: absolute;
+    top: 50%;  /* Képek függőleges középre igazítása */
+    transform: translateY(-50%);  /* Az igazi középre igazításhoz szükséges eltolás */
+    width: 250px;
+    object-fit: cover;  /* Kép megfelelő kitöltéséhez */
+}
+
+#gomb1,#gomb2, #gomb3, #gomb4, #gomb5, #gomb6, #gomb7{
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+input{
+    background-color: greenyellow;
+    width: 150px;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 25px;
+}
+
+input:focus{
+    outline: none;
+}
+
+#jatekosok {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* távolság a két oszlop között */
+    margin-top: 20px;
+  }
+  
+  .jatekos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+#nullázás{
+    margin-top: 50px;
+}
+
+@media (max-width: 768px){
+    body{
+        font-size: 10px;
+        margin: auto;
+    }
+
+    #bal-oldal, #jobb-oldal{
+        width: 10%;
+    }
+
+    #gomb1,#gomb2, #gomb3, #gomb4, #gomb5, #gomb6, #gomb7{
+        padding: 5px;
+        width: 100px;
+        height: 30px;
+        font-size: 8px;
+        border-radius: 5px;
+        background-color: greenyellow;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+
+    input{
+        background-color: greenyellow;
+        width: 100px;
+        border-radius: 10px;
+        border: 2px solid black;
+        padding: 10px;
+        margin: 25px;
+        text-align: center;
+    }
+}

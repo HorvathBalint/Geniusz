@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Géniusz</title>
+  <link rel="stylesheet" href="Geniusz.css">
+</head>
+<body>
+
+  <!-- <img src="Geniusz_1.jpg" alt="" id="bal-oldal">
+  <img src="Geniusz_2.jpg" alt="" id="jobb-oldal"> -->
+  <div>
+    <h1>Géniusz témakör választó</h1> 
+    <button id="gomb1" onclick="valasszTemakorok()">Generál</button>
+    <div id="eredmeny"></div> <!-- Eredmény ide kerül -->
+    <input type="text" id="Első-input" placeholder="Első játékos">
+    <input type="text" id="Második-input" placeholder="Második játékos">
+    <br>
+    <button id="gomb2" onclick="nevbevitel()">Név bevitel</button>
+    <div id="jatekosok">
+      <div class="jatekos">
+        <h1 id="Első-játékos"></h1>
+        <h2 id="első-pontszám">Pontszám: <span id="pontok1">0</span></h2>
+        <button id="gomb3" onclick="Pontszám1()">Plusz</button>
+      </div>
+      <div class="jatekos">
+        <h1 id="Második-játékos"></h1>
+        <h2 id="második-pontszám">Pontszám: <span id="pontok2">0</span></h2>
+        <button id="gomb4" onclick="Pontszám2()">Plusz</button>
+      </div>
+    </div>
+    <div id="nullázás">
+      <button id="gomb5" onclick="Nullázás()">Pontok nullázása</button>
+    </div>
+    <div id="időzítő">
+      <h1 id="timer">10</h1>
+      <button onclick="startTimer()" id="gomb6">Indítás</button>
+      <button onclick="resetTimer()" id="gomb7">Visszaállítás</button>
+    </div>
+  </div>
+</body>
+<script src="Geniusz.js"></script>
+</html>
